@@ -1,22 +1,12 @@
-# La Biblia Nos Habla — Sitio v2
+# La Biblia Nos Habla — Versión 3
 
-Primera versión profesional de la página principal.
+Sitio estático listo para subir a GitHub y desplegar en Vercel.
 
-## Incluye
-- Diseño negro, dorado y blanco.
-- Banner oficial.
-- Fotografía del Pastor Gilberto Maldonado.
-- Integración directa con el canal de YouTube.
-- Secciones del pastor, iglesia, misiones y oración.
-- Horarios de la Iglesia Príncipe de Paz en Philadelphia.
-- Diseño adaptable para teléfono, tableta y computadora.
+## Actualización
+1. Descomprima el ZIP.
+2. En GitHub, abra el repositorio `la-biblia-nos-habla`.
+3. Use **Add file → Upload files**.
+4. Suba todo el contenido de esta carpeta, reemplazando los archivos anteriores.
+5. Haga **Commit changes**. Vercel actualizará el sitio automáticamente.
 
-## Cómo abrirla
-Abra `index.html` en Safari, Chrome o Edge.
-
-## Antes de publicar
-1. Añadir la dirección completa de la iglesia.
-2. Añadir correo y/o WhatsApp ministerial.
-3. Conectar el formulario de oración.
-4. Conectar el dominio `labiblianoshabla.org`.
-5. Publicar en Vercel.
+Canal oficial: https://www.youtube.com/@GilbertoMaldonado-00

@@ -1,25 +1,5 @@
-const year = document.getElementById("year");
-year.textContent = new Date().getFullYear();
-
-const menuButton = document.querySelector(".menu-button");
-const menu = document.querySelector(".menu");
-
-menuButton.addEventListener("click", () => {
-  const isOpen = menu.classList.toggle("open");
-  menuButton.setAttribute("aria-expanded", String(isOpen));
-});
-
-document.querySelectorAll(".menu a").forEach(link => {
-  link.addEventListener("click", () => {
-    menu.classList.remove("open");
-    menuButton.setAttribute("aria-expanded", "false");
-  });
-});
-
-const form = document.getElementById("prayerForm");
-const status = document.getElementById("formStatus");
-
-form.addEventListener("submit", event => {
-  event.preventDefault();
-  status.textContent = "El diseño del formulario está listo. Lo conectaremos al correo ministerial antes de publicar.";
-});
+const menuBtn=document.querySelector('.menu-btn'),nav=document.querySelector('.nav nav');menuBtn.onclick=()=>nav.classList.toggle('open');
+const gallery=document.getElementById('gallery');for(let i=1;i<=24;i++){const img=document.createElement('img');img.src=`assets/misiones/mision-${String(i).padStart(2,'0')}.webp`;img.alt='Misión en Chicachuy, Lanquín, Guatemala';img.loading='lazy';if(i>12)img.classList.add('hidden');img.onclick=()=>{document.querySelector('#lightbox img').src=img.src;document.getElementById('lightbox').classList.add('open')};gallery.appendChild(img)}
+document.getElementById('moreBtn').onclick=e=>{document.querySelectorAll('.gallery .hidden').forEach(x=>x.classList.remove('hidden'));e.target.style.display='none'};
+const lb=document.getElementById('lightbox');lb.querySelector('button').onclick=()=>lb.classList.remove('open');lb.onclick=e=>{if(e.target===lb)lb.classList.remove('open')};
+document.getElementById('year').textContent=new Date().getFullYear();document.getElementById('prayerForm').onsubmit=e=>{e.preventDefault();document.getElementById('status').textContent='Formulario preparado. Falta conectarlo al correo oficial del ministerio.'};
