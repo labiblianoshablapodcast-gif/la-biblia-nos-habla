@@ -1,4 +1,4 @@
-# La Biblia Nos Habla — Versión 6 (lista para Git)
+# La Biblia Nos Habla — Versión 7 (lista para Git)
 
 ## Lo que ya funciona
 - Sitio principal adaptable a teléfonos y computadoras.
@@ -50,3 +50,11 @@ Suba a la raíz:
 - Registro_de_Diezmos_y_Ofrendas.xlsx
 
 Vercel detectará el cambio y publicará automáticamente.
+
+
+## Novedades de la Versión 7
+- Enlace activo para el estudio bíblico por videollamada de WhatsApp.
+- Nueva página `gallery.html`.
+- Galería filtrable por Misiones, Congregación, Liderazgo y Servicio.
+- Visor de fotografías a pantalla completa con navegación anterior/siguiente.
+- Botón “Ver galería completa” en la página principal.
