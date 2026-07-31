@@ -1,38 +1,52 @@
-# La Biblia Nos Habla — Sitio oficial V5
+# La Biblia Nos Habla — Versión 6 (lista para Git)
 
-Sitio estático listo para GitHub Pages, Vercel, Netlify o cualquier hosting tradicional.
+## Lo que ya funciona
+- Sitio principal adaptable a teléfonos y computadoras.
+- Horarios y direcciones de Philadelphia y Garfield.
+- Cobertura ministerial con Pastor General Rev. Rodolfo Solórzano y Pastora Masiel Solórzano.
+- Galería de misiones en Cobán y Lanquín.
+- Evento Culto Misionero del 7 de agosto de 2026.
+- Estudio bíblico de los jueves, 8:00–9:00 p.m., por WhatsApp.
+- Zona “Primeros Pasos con Jesús”.
+- Estudio completo de los 21 capítulos del Evangelio de Juan.
+- Progreso guardado en el dispositivo.
+- Formularios de oración y preguntas al pastor.
+- Respuesta automática por correo mediante FormSubmit.
+- Diseño de Diezmos, Ofrendas, Misiones y Benevolencia.
+- Plantilla Excel para registrar contribuciones y obtener reportes mensuales.
 
-## Publicación en Vercel
-1. Descomprima este ZIP.
-2. Suba todos los archivos a la raíz del repositorio GitHub `la-biblia-nos-habla`.
-3. Vercel detectará `index.html` y publicará automáticamente.
+## Activar formularios de correo
+Después de publicar:
+1. Envíe una petición de prueba.
+2. FormSubmit enviará un correo de activación a Labiblianoshablapodcast@gmail.com.
+3. Abra ese mensaje y confirme.
+4. Desde ese momento los formularios enviarán correos y respuestas automáticas.
 
-## Contenido incluido
-- Portada moderna y adaptable a teléfonos.
-- Testimonio del Pastor Gilberto Maldonado.
-- Horarios y dirección de Philadelphia.
-- Cobertura ministerial con Rev. Rodolfo Solórzano y Masiel Solórzano.
-- Iglesia central de Garfield.
-- Misiones de Cobán y Lanquín.
-- Galería con visor ampliado.
-- Canal oficial de YouTube.
-- Sección del libro “Rescatado con Propósito”.
-- Formulario de oración basado en la aplicación de correo del visitante.
-- Enlaces de Google Maps.
+## Conectar WhatsApp
+Abra `config.js` y pegue el enlace del grupo o videollamada:
+`whatsappStudyLink: "AQUI-EL-ENLACE"`
 
-## Importante sobre el formulario
-No se incluyó una dirección de correo porque todavía no fue proporcionada. Actualmente el formulario abre la aplicación de correo del visitante sin destinatario. Para recibir peticiones directamente, reemplace en `script.js`:
+## Conectar pagos seguros
+No publique números de cuenta bancaria en GitHub.
+Seleccione una plataforma segura y pegue sus enlaces en `config.js`:
+- titheLink
+- offeringLink
+- missionsLink
+- benevolenceLink
 
-`mailto:?subject=`
+## Subir a GitHub
+Suba a la raíz:
+- index.html
+- principiantes.html
+- dar.html
+- styles.css
+- script.js
+- beginners.js
+- giving.js
+- config.js
+- chapters.json
+- README.md
+- carpeta assets
+- Registro_de_Diezmos_y_Ofrendas.xlsx
 
-por:
-
-`mailto:SU-CORREO@DOMINIO.COM?subject=`
-
-También se puede conectar más adelante con Formspree, Basin o una función de Vercel.
-
-## Dominio
-Después de desplegar, conecte `labiblianoshabla.org` desde Vercel y mantenga los DNS administrados en Cloudflare.
-
-
-Correo configurado para peticiones: Labiblianoshablapodcast@gmail.com
+Vercel detectará el cambio y publicará automáticamente.

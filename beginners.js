@@ -1,0 +1,6 @@
+fetch('chapters.json').then(r=>r.json()).then(chapters=>{
+const list=document.getElementById('lessonList'); const saved=JSON.parse(localStorage.getItem('johnProgress')||'{}');
+chapters.forEach((c,i)=>{const card=document.createElement('details');card.className='lesson-card';card.innerHTML=`<summary><span>${i+1}</span><div><strong>${c[0]}</strong><small>${c[1]}</small></div><label class="complete-check"><input type="checkbox" data-i="${i}" ${saved[i]?'checked':''}> Completado</label></summary><div class="lesson-body"><p><strong>Lea ${c[0]} en su Biblia.</strong></p><ol><li>${c[2]}</li><li>${c[3]}</li><li>${c[4]}</li></ol><textarea rows="5" placeholder="Escriba aquí lo que aprendió..."></textarea><a class="text-link" href="#ayuda">Tengo una pregunta para el Pastor →</a></div>`;list.appendChild(card)});
+function update(){const checks=[...document.querySelectorAll('.complete-check input')];const done=checks.filter(x=>x.checked).length;document.getElementById('progressText').textContent=`${done} de 21 capítulos`;document.getElementById('progressBar').style.width=(done/21*100)+'%';const data={};checks.forEach(x=>data[x.dataset.i]=x.checked);localStorage.setItem('johnProgress',JSON.stringify(data))}
+document.querySelectorAll('.complete-check input').forEach(x=>x.addEventListener('change',update));update();
+});
