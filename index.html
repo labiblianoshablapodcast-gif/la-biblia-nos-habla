@@ -1,14 +1,218 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0a0a09"><meta name="description" content="La Biblia Nos Habla, ministerio de enseñanza bíblica del Pastor Gilberto Maldonado."><title>La Biblia Nos Habla | Pastor Gilberto Maldonado</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head><body>
-<header><div class="container nav"><a class="brand" href="#inicio"><span>✦</span><div><strong>LA BIBLIA NOS HABLA</strong><small>Ministerio de Enseñanza Bíblica</small></div></a><button class="menu-btn" aria-label="Abrir menú">☰</button><nav><a href="#predicaciones">Predicaciones</a><a href="#pastor">Pastor</a><a href="#misiones">Misiones</a><a href="#iglesia">Iglesia</a><a class="pill" href="#oracion">Pedir oración</a></nav></div></header>
-<main>
-<section id="inicio" class="hero"><div class="hero-bg"></div><div class="hero-overlay"></div><div class="container hero-copy"><p class="eyebrow">VERDAD · FE · ESPERANZA</p><h1>La Palabra que transforma tu vida.</h1><p>Predicaciones, estudios y recursos bíblicos con el Pastor Gilberto Maldonado.</p><div class="actions"><a class="btn gold" href="https://www.youtube.com/@GilbertoMaldonado-00" target="_blank" rel="noopener">▶ Ver en YouTube</a><a class="btn outline" href="#misiones">Conocer las misiones</a></div><blockquote>“La Biblia no es solo un libro, es Dios hablando a tu vida.”</blockquote></div></section>
-<section class="stats"><div class="container stats-grid"><div><strong>112</strong><span>Suscriptores</span></div><div><strong>83</strong><span>Videos</span></div><div><strong>25,140</strong><span>Visualizaciones</span></div><div><strong>2020</strong><span>Canal fundado</span></div></div></section>
-<section id="predicaciones" class="section dark"><div class="container"><div class="heading"><div><p class="kicker">PREDICACIONES Y PODCAST</p><h2>Escuche la Palabra</h2></div><a href="https://www.youtube.com/@GilbertoMaldonado-00" target="_blank" rel="noopener">Visitar el canal →</a></div><div class="youtube"><img src="assets/banner.webp" alt="La Biblia Nos Habla"><div><span class="tag">CANAL OFICIAL</span><h3>Pastor Gilberto Maldonado</h3><p>Mensajes centrados en Cristo, enseñanza bíblica y palabras de esperanza para toda la familia.</p><a class="btn gold" href="https://www.youtube.com/@GilbertoMaldonado-00" target="_blank" rel="noopener">Suscribirse en YouTube</a></div></div></div></section>
-<section id="pastor" class="section"><div class="container split"><div class="portrait"><img src="assets/pastor.webp" alt="Pastor Gilberto Maldonado"></div><div><p class="kicker">CONOZCA AL PASTOR</p><h2>Una vida dedicada a proclamar a Cristo</h2><p>El Pastor Gilberto Maldonado sirve en la enseñanza fiel de las Escrituras, la predicación del evangelio, el fortalecimiento de las familias y la obra misionera.</p><p>Por medio de <strong>La Biblia Nos Habla</strong>, comparte mensajes claros y prácticos para ayudar a cada persona a crecer en su relación con Dios.</p></div></div></section>
-<section id="misiones" class="section mission-hero"><div class="container"><p class="kicker">MISIONES 2026</p><h2>Inauguración del templo en Chicachuy</h2><p class="lead">Lanquín, Alta Verapaz, Guatemala</p><p>En julio de 2026 celebramos junto a la comunidad la inauguración del templo, compartimos el evangelio y ministramos a niños, jóvenes y familias.</p><div class="mission-facts"><div><strong>1</strong><span>Templo inaugurado</span></div><div><strong>Guatemala</strong><span>País</span></div><div><strong>Marcos 16:15</strong><span>Texto de la misión</span></div></div></div></section>
-<section class="section gallery-section"><div class="container"><div class="heading"><div><p class="kicker">HISTORIA VISUAL</p><h2>Fe, servicio y comunidad</h2></div></div><div class="gallery" id="gallery"></div><button class="btn more" id="moreBtn">Ver más fotos</button></div></section>
-<section class="section dark"><div class="container"><p class="kicker">VIDEO DE LA MISIÓN</p><h2>Momentos que marcaron el viaje</h2><div class="video-wrap"><video controls preload="metadata" src="assets/videos/mision-1.mp4"></video></div></div></section>
-<section id="iglesia" class="section"><div class="container"><p class="kicker">IGLESIA PRÍNCIPE DE PAZ · PHILADELPHIA</p><h2>Una casa para adorar, crecer y servir</h2><div class="cards"><article><h3>Miércoles</h3><p>8:00 p. m.</p></article><article><h3>Sábado</h3><p>8:00 p. m.</p></article><article><h3>Domingo</h3><p>10:00 a. m.</p></article></div></div></section>
-<section id="oracion" class="section prayer"><div class="container split"><div><p class="kicker">PETICIONES DE ORACIÓN</p><h2>Queremos orar por usted</h2><p>Comparta su petición con respeto y confianza. Este formulario puede conectarse más adelante al correo oficial del ministerio.</p></div><form id="prayerForm"><input placeholder="Nombre"><input type="email" placeholder="Correo electrónico"><textarea rows="6" required placeholder="Escriba su petición"></textarea><button class="btn gold">Enviar petición</button><p id="status"></p></form></div></section>
-</main><footer><div class="container footer"><div><strong>LA BIBLIA NOS HABLA</strong><p>Ministerio de Enseñanza Bíblica · Pastor Gilberto Maldonado</p></div><a href="https://www.youtube.com/@GilbertoMaldonado-00" target="_blank" rel="noopener">YouTube</a><span>© <span id="year"></span></span></div></footer>
-<div class="lightbox" id="lightbox"><button aria-label="Cerrar">×</button><img alt="Foto de la misión"></div><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="La Biblia Nos Habla — Ministerio del Pastor Gilberto Maldonado e Iglesia Príncipe de Paz, Philadelphia.">
+  <title>La Biblia Nos Habla | Iglesia Príncipe de Paz Philadelphia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<header class="site-header">
+  <a class="brand" href="#inicio">
+    <span class="brand-mark">✦</span>
+    <span><strong>La Biblia Nos Habla</strong><small>Predicando a Cristo · Sirviendo con amor</small></span>
+  </a>
+  <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  <nav class="nav">
+    <a href="#historia">Historia</a>
+    <a href="#iglesia">Iglesia</a>
+    <a href="#cobertura">Cobertura</a>
+    <a href="#misiones">Misiones</a>
+    <a href="#mensajes">Mensajes</a>
+    <a href="#oracion" class="nav-cta">Pedir oración</a>
+  </nav>
+</header>
+
+<main id="contenido">
+<section class="hero" id="inicio">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content reveal">
+    <p class="eyebrow">Iglesia Príncipe de Paz · Philadelphia</p>
+    <h1>Una historia de gracia.<br>Un ministerio con propósito.</h1>
+    <p>Somos una congregación que proclama el evangelio de Jesucristo, sirve a la comunidad y lleva esperanza desde Philadelphia hasta Guatemala.</p>
+    <div class="actions">
+      <a class="btn primary" href="#iglesia">Visítenos</a>
+      <a class="btn ghost" href="https://www.youtube.com/@GilbertoMaldonado-00" target="_blank" rel="noopener">Ver predicaciones</a>
+    </div>
+  </div>
+  <div class="hero-card reveal">
+    <span>Próximo encuentro</span>
+    <strong>Miércoles · 8:00 p.m.</strong>
+    <small>3661 N Marvine St., Philadelphia</small>
+  </div>
+</section>
+
+<section class="welcome section">
+  <div class="section-head reveal">
+    <p class="eyebrow">Bienvenidos</p>
+    <h2>Un lugar para adorar, crecer y servir</h2>
+  </div>
+  <div class="welcome-grid">
+    <div class="welcome-copy reveal">
+      <p class="lead">La Iglesia Príncipe de Paz en Philadelphia forma parte de la Iglesia Internacional Príncipe de Paz. Nuestras puertas están abiertas para usted y su familia.</p>
+      <p>Creemos en la predicación fiel de la Palabra de Dios, la oración, la adoración y el servicio compasivo. Nuestra congregación está compuesta mayormente por hermanos de Alta Verapaz, Guatemala, incluyendo comunidades de habla Q'eqchi'.</p>
+      <blockquote>“El que comenzó en vosotros la buena obra, la perfeccionará hasta el día de Jesucristo.” <cite>Filipenses 1:6</cite></blockquote>
+    </div>
+    <div class="service-cards reveal">
+      <article><span>Miércoles</span><strong>8:00 p.m.</strong><small>Servicio de adoración y Palabra</small></article>
+      <article><span>Sábado</span><strong>8:00 p.m.</strong><small>Servicio congregacional</small></article>
+      <article><span>Domingo</span><strong>10:00 a.m.</strong><small>Celebración familiar</small></article>
+    </div>
+  </div>
+</section>
+
+<section class="story section dark" id="historia">
+  <div class="story-image reveal"><img src="assets/images/pastor.webp" alt="Pastor Gilberto Maldonado"></div>
+  <div class="story-copy reveal">
+    <p class="eyebrow">Conozca al pastor</p>
+    <h2>Pastor Gilberto Maldonado</h2>
+    <p class="lead">Su vida es un testimonio del poder restaurador de Jesucristo.</p>
+    <p>Después de una niñez marcada por el dolor y años de vida en las calles, fue sentenciado a pasar aproximadamente diecisiete años y medio en prisión. Allí tuvo un encuentro personal con el Señor y entregó su vida a Cristo.</p>
+    <p>La prisión se convirtió en un campo misionero. Sirvió como maestro bíblico, consejero, músico y pastor interino de una comunidad cristiana de alrededor de 120 internos. Organizó estudios para principiantes, creyentes avanzados y formación ética cristiana, mientras muchas vidas eran alcanzadas por el evangelio.</p>
+    <p>Al recuperar su libertad, continuó sirviendo fielmente hasta ser llamado al pastorado de la Iglesia Príncipe de Paz en Philadelphia.</p>
+    <a class="text-link" href="#libro">Conozca el libro “Rescatado con Propósito” →</a>
+  </div>
+</section>
+
+<section class="timeline section">
+  <div class="section-head reveal">
+    <p class="eyebrow">De las cadenas al propósito</p>
+    <h2>Una vida transformada</h2>
+  </div>
+  <div class="timeline-grid">
+    <article class="reveal"><b>01</b><h3>Una niñez difícil</h3><p>Desde los seis años enfrentó separación familiar, dolor e inestabilidad.</p></article>
+    <article class="reveal"><b>02</b><h3>Dios lo buscó</h3><p>Tres días antes del delito que lo llevó a prisión, evangelistas le hablaron de Cristo en Camden.</p></article>
+    <article class="reveal"><b>03</b><h3>Conversión en prisión</h3><p>Un evangelista confirmó el mensaje que Dios ya había puesto en su corazón.</p></article>
+    <article class="reveal"><b>04</b><h3>Ministerio tras los muros</h3><p>Enseñanza, consejería, música, discipulado y liderazgo pastoral.</p></article>
+    <article class="reveal"><b>05</b><h3>Libertad y servicio</h3><p>Tras diecisiete años y medio, salió para continuar la obra que Dios había comenzado.</p></article>
+    <article class="reveal"><b>06</b><h3>Pastorado y misiones</h3><p>Hoy sirve en Philadelphia y participa en misiones en Cobán y Lanquín.</p></article>
+  </div>
+</section>
+
+<section class="church section" id="iglesia">
+  <div class="church-photo reveal"><img src="assets/images/church-family.webp" alt="Familia de la Iglesia Príncipe de Paz"></div>
+  <div class="church-info reveal">
+    <p class="eyebrow">Nuestra congregación</p>
+    <h2>Iglesia Príncipe de Paz — Philadelphia</h2>
+    <p>Una iglesia multicultural y familiar, unida por la fe en Jesucristo y comprometida con la comunidad.</p>
+    <div class="info-box"><strong>Dirección</strong><span>3661 N Marvine St.<br>Philadelphia, PA</span></div>
+    <div class="info-box"><strong>Servicios</strong><span>Miércoles 8:00 p.m.<br>Sábado 8:00 p.m.<br>Domingo 10:00 a.m.</span></div>
+    <a class="btn primary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=3661+N+Marvine+St+Philadelphia+PA">Abrir en Google Maps</a>
+  </div>
+</section>
+
+<section class="covering section soft" id="cobertura">
+  <div class="section-head reveal">
+    <p class="eyebrow">Cobertura ministerial</p>
+    <h2>Iglesia Internacional Príncipe de Paz</h2>
+  </div>
+  <div class="covering-grid">
+    <div class="covering-image reveal"><img src="assets/images/leadership.webp" alt="Liderazgo de la Iglesia Internacional Príncipe de Paz"></div>
+    <div class="covering-copy reveal">
+      <h3>Honrando a quienes Dios puso en el camino</h3>
+      <p>La congregación de Philadelphia es parte de la <strong>Iglesia Internacional Príncipe de Paz</strong>, cuya iglesia central está ubicada en <strong>132 Palisade Ave., Garfield, New Jersey</strong>.</p>
+      <p>Con profundo agradecimiento reconocemos el liderazgo, la confianza y el respaldo del <strong>Pastor General, Rev. Rodolfo Solórzano</strong>. Dios lo utilizó para recibir al Pastor Gilberto Maldonado con brazos abiertos, brindarle oportunidades de servir y acompañarlo en su crecimiento ministerial.</p>
+      <p>También expresamos nuestro aprecio a <strong>Masiel Solórzano</strong>, por su apoyo, servicio y labor junto al Pastor Solórzano. Su ejemplo y dedicación forman parte importante de esta historia.</p>
+      <a class="text-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=132+Palisade+Ave+Garfield+NJ">Ver iglesia central en el mapa →</a>
+    </div>
+  </div>
+</section>
+
+<section class="missions section" id="misiones">
+  <div class="section-head reveal">
+    <p class="eyebrow">Misiones en Guatemala</p>
+    <h2>El evangelio cruza fronteras</h2>
+    <p>Dos viajes, muchas vidas y una sola misión: compartir el amor de Jesucristo.</p>
+  </div>
+  <div class="mission-feature">
+    <article class="mission-card reveal">
+      <img src="assets/images/compassion.webp" alt="Ministerio de compasión en Cobán">
+      <div><span>Cobán · Alta Verapaz</span><h3>Sirviendo con compasión</h3><p>Oración, visitas, ayuda comunitaria, evangelismo y comunión con las iglesias locales.</p></div>
+    </article>
+    <article class="mission-card reveal">
+      <img src="assets/images/mission-5.webp" alt="Misión en Lanquín Guatemala">
+      <div><span>Lanquín · Alta Verapaz</span><h3>Celebrando una obra para Dios</h3><p>Adoración, predicación, actividades con niños y la inauguración del templo.</p></div>
+    </article>
+  </div>
+
+  <div class="gallery" id="galeria">
+    <button class="gallery-item wide" data-src="assets/images/mission-1.webp"><img src="assets/images/mission-1.webp" alt="Misión en Guatemala"></button>
+    <button class="gallery-item" data-src="assets/images/mission-2.webp"><img src="assets/images/mission-2.webp" alt="Actividad misionera"></button>
+    <button class="gallery-item tall" data-src="assets/images/mission-3.webp"><img src="assets/images/mission-3.webp" alt="Predicación al aire libre"></button>
+    <button class="gallery-item" data-src="assets/images/mission-4.webp"><img src="assets/images/mission-4.webp" alt="Niños en actividad misionera"></button>
+    <button class="gallery-item wide" data-src="assets/images/mission-6.webp"><img src="assets/images/mission-6.webp" alt="Equipo misionero"></button>
+    <button class="gallery-item" data-src="assets/images/mission-7.webp"><img src="assets/images/mission-7.webp" alt="Grupo misionero"></button>
+    <button class="gallery-item" data-src="assets/images/worship.webp"><img src="assets/images/worship.webp" alt="Servicio de adoración"></button>
+    <button class="gallery-item" data-src="assets/images/plaque.webp"><img src="assets/images/plaque.webp" alt="Placa conmemorativa"></button>
+  </div>
+</section>
+
+<section class="media section dark" id="mensajes">
+  <div class="media-copy reveal">
+    <p class="eyebrow">Predicaciones y enseñanzas</p>
+    <h2>La Biblia Nos Habla</h2>
+    <p>Mensajes bíblicos, estudios, testimonios y contenido pastoral para fortalecer la fe y anunciar que Jesucristo sigue transformando vidas.</p>
+    <a class="btn primary" target="_blank" rel="noopener" href="https://www.youtube.com/@GilbertoMaldonado-00">Visitar canal de YouTube</a>
+  </div>
+  <div class="media-art reveal">
+    <span>LA BIBLIA</span>
+    <strong>NOS HABLA</strong>
+    <small>“La Palabra de Dios es viva y eficaz”</small>
+  </div>
+</section>
+
+<section class="book section" id="libro">
+  <div class="book-cover reveal"><div class="book-inner"><small>TESTIMONIO</small><h2>Rescatado<br>con Propósito</h2><span>Gilberto Maldonado</span></div></div>
+  <div class="book-copy reveal">
+    <p class="eyebrow">Libro en preparación</p>
+    <h2>La historia no terminó en la prisión</h2>
+    <p>Una autobiografía sobre una infancia herida, la vida en las calles, el encuentro con Cristo detrás de los barrotes y el propósito que Dios reveló a través del servicio, el pastorado y las misiones.</p>
+    <p class="status">Próximamente</p>
+  </div>
+</section>
+
+<section class="prayer section soft" id="oracion">
+  <div class="prayer-copy reveal">
+    <p class="eyebrow">No está solo</p>
+    <h2>Permítanos orar por usted</h2>
+    <p>Comparta su petición. Al enviar el formulario se preparará un mensaje en su aplicación de correo; ningún dato se almacena en esta página.</p>
+  </div>
+  <form class="prayer-form reveal" id="prayerForm">
+    <label>Nombre<input name="name" autocomplete="name" required></label>
+    <label>Correo electrónico<input type="email" name="email" autocomplete="email"></label>
+    <label>Petición de oración<textarea name="request" rows="5" required></textarea></label>
+    <button class="btn primary" type="submit">Preparar petición</button>
+    <p class="form-note" id="formNote" role="status"></p>
+  </form>
+</section>
+
+<section class="visit section">
+  <div class="section-head reveal">
+    <p class="eyebrow">Le esperamos</p>
+    <h2>Visite la Iglesia Príncipe de Paz</h2>
+  </div>
+  <div class="visit-grid">
+    <article class="reveal"><h3>Philadelphia</h3><p>3661 N Marvine St.<br>Philadelphia, PA</p><p>Miércoles 8 p.m.<br>Sábado 8 p.m.<br>Domingo 10 a.m.</p><a href="https://www.google.com/maps/search/?api=1&query=3661+N+Marvine+St+Philadelphia+PA" target="_blank" rel="noopener">Cómo llegar →</a></article>
+    <article class="reveal"><h3>Iglesia Central · Garfield</h3><p>132 Palisade Ave.<br>Garfield, NJ</p><p>Pastor General<br><strong>Rev. Rodolfo Solórzano</strong></p><a href="https://www.google.com/maps/search/?api=1&query=132+Palisade+Ave+Garfield+NJ" target="_blank" rel="noopener">Cómo llegar →</a></article>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div><strong>La Biblia Nos Habla</strong><p>Iglesia Príncipe de Paz · Philadelphia</p></div>
+  <div><a href="#inicio">Inicio</a><a href="#misiones">Misiones</a><a href="#oracion">Oración</a></div>
+  <div><p>3661 N Marvine St.<br>Philadelphia, PA</p></div>
+  <p class="copyright">© <span id="year"></span> La Biblia Nos Habla. Para la gloria de Dios.</p>
+</footer>
+
+<div class="lightbox" aria-hidden="true"><button aria-label="Cerrar">×</button><img alt="Fotografía ampliada"></div>
+<script src="script.js"></script>
+</body>
+</html>

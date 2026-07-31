@@ -1,5 +1,11 @@
-const menuBtn=document.querySelector('.menu-btn'),nav=document.querySelector('.nav nav');menuBtn.onclick=()=>nav.classList.toggle('open');
-const gallery=document.getElementById('gallery');for(let i=1;i<=24;i++){const img=document.createElement('img');img.src=`assets/misiones/mision-${String(i).padStart(2,'0')}.webp`;img.alt='Misión en Chicachuy, Lanquín, Guatemala';img.loading='lazy';if(i>12)img.classList.add('hidden');img.onclick=()=>{document.querySelector('#lightbox img').src=img.src;document.getElementById('lightbox').classList.add('open')};gallery.appendChild(img)}
-document.getElementById('moreBtn').onclick=e=>{document.querySelectorAll('.gallery .hidden').forEach(x=>x.classList.remove('hidden'));e.target.style.display='none'};
-const lb=document.getElementById('lightbox');lb.querySelector('button').onclick=()=>lb.classList.remove('open');lb.onclick=e=>{if(e.target===lb)lb.classList.remove('open')};
-document.getElementById('year').textContent=new Date().getFullYear();document.getElementById('prayerForm').onsubmit=e=>{e.preventDefault();document.getElementById('status').textContent='Formulario preparado. Falta conectarlo al correo oficial del ministerio.'};
+const menuBtn=document.querySelector('.menu-btn'),nav=document.querySelector('.nav');
+menuBtn.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',open)});
+document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const lightbox=document.querySelector('.lightbox'),lightImg=lightbox.querySelector('img');
+document.querySelectorAll('.gallery-item').forEach(b=>b.addEventListener('click',()=>{lightImg.src=b.dataset.src;lightbox.classList.add('open');lightbox.setAttribute('aria-hidden','false')}));
+function closeBox(){lightbox.classList.remove('open');lightbox.setAttribute('aria-hidden','true');lightImg.src=''}
+lightbox.querySelector('button').addEventListener('click',closeBox);lightbox.addEventListener('click',e=>{if(e.target===lightbox)closeBox()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeBox()});
+document.getElementById('prayerForm').addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.currentTarget),name=d.get('name'),email=d.get('email')||'No provisto',request=d.get('request');const subject=encodeURIComponent('Petición de oración — '+name);const body=encodeURIComponent(`Nombre: ${name}\nCorreo: ${email}\n\nPetición:\n${request}`);document.getElementById('formNote').textContent='Se abrirá su aplicación de correo para completar el envío.';window.location.href=`mailto:Labiblianoshablapodcast@gmail.com?subject=${subject}&body=${body}`});
+document.getElementById('year').textContent=new Date().getFullYear();
