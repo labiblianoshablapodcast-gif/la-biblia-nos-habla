@@ -1,4 +1,4 @@
-# La Biblia Nos Habla — Versión 7 (lista para Git)
+# La Biblia Nos Habla — Versión 8 (lista para Git)
 
 ## Lo que ya funciona
 - Sitio principal adaptable a teléfonos y computadoras.
@@ -52,9 +52,20 @@ Suba a la raíz:
 Vercel detectará el cambio y publicará automáticamente.
 
 
-## Novedades de la Versión 7
+## Novedades de la Versión 8
 - Enlace activo para el estudio bíblico por videollamada de WhatsApp.
 - Nueva página `gallery.html`.
 - Galería filtrable por Misiones, Congregación, Liderazgo y Servicio.
 - Visor de fotografías a pantalla completa con navegación anterior/siguiente.
 - Botón “Ver galería completa” en la página principal.
+
+
+## Novedades de la Versión 8
+- Nueva página `predicaciones.html`.
+- Biblioteca con búsqueda por título, texto bíblico, categoría y palabras clave.
+- Categorías de Salvación, Vida cristiana, Espíritu Santo, Familia, Adoración, Testimonio, Gracia y Podcast.
+- Enlaces directos al canal oficial de YouTube.
+- Botón de suscripción y acceso a todos los videos.
+- Nueva sección de Podcast.
+- Vista previa de Predicaciones y Podcast en la página principal.
+- Archivo `sermons.json` fácil de editar para añadir enlaces específicos de videos más adelante.
