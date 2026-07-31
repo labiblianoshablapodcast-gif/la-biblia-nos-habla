@@ -1,4 +1,4 @@
-# La Biblia Nos Habla — Versión 9 (lista para Git)
+# La Biblia Nos Habla — Versión 10 (lista para Git)
 
 ## Lo que ya funciona
 - Sitio principal adaptable a teléfonos y computadoras.
@@ -52,7 +52,7 @@ Suba a la raíz:
 Vercel detectará el cambio y publicará automáticamente.
 
 
-## Novedades de la Versión 9
+## Novedades de la Versión 10
 - Enlace activo para el estudio bíblico por videollamada de WhatsApp.
 - Nueva página `gallery.html`.
 - Galería filtrable por Misiones, Congregación, Liderazgo y Servicio.
@@ -60,7 +60,7 @@ Vercel detectará el cambio y publicará automáticamente.
 - Botón “Ver galería completa” en la página principal.
 
 
-## Novedades de la Versión 9
+## Novedades de la Versión 10
 - Nueva página `predicaciones.html`.
 - Biblioteca con búsqueda por título, texto bíblico, categoría y palabras clave.
 - Categorías de Salvación, Vida cristiana, Espíritu Santo, Familia, Adoración, Testimonio, Gracia y Podcast.
@@ -71,7 +71,7 @@ Vercel detectará el cambio y publicará automáticamente.
 - Archivo `sermons.json` fácil de editar para añadir enlaces específicos de videos más adelante.
 
 
-## Novedades de la Versión 9
+## Novedades de la Versión 10
 - Nueva página `pastor.html`.
 - Testimonio de conversión y restauración.
 - Historia del ministerio dentro de la cárcel.
@@ -80,3 +80,14 @@ Vercel detectará el cambio y publicará automáticamente.
 - Reconocimiento al Pastor General Rev. Rodolfo Solórzano y a la Pastora Masiel Solórzano.
 - Presentación del libro en preparación `Rescatado con Propósito`.
 - Nuevo enlace “Conozca al Pastor” en la navegación principal.
+
+
+## Novedades de la Versión 10
+- Nueva página `conexion.html`.
+- Centro de Conexión para salvación, visitantes, bautismo, membresía, estudios bíblicos, consejería, visitas pastorales y servicio.
+- Formulario automático conectado al correo ministerial.
+- Respuesta automática por correo.
+- Selección rápida que completa el tipo de solicitud.
+- Aviso de privacidad pastoral.
+- Enlaces hacia Primeros Pasos, Predicaciones, WhatsApp y Oración.
+- Nueva sección del Centro de Conexión en la página principal.

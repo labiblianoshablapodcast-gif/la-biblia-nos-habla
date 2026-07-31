@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Centro de Conexión de la Iglesia Príncipe de Paz Philadelphia: salvación, bautismo, membresía, consejería, visitas y estudios bíblicos.">
+<title>Centro de Conexión | La Biblia Nos Habla</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="inner-page connection-page">
+<header class="site-header">
+<a class="brand" href="index.html"><span class="brand-mark">✦</span><span><strong>La Biblia Nos Habla</strong><small>Centro de Conexión</small></span></a>
+<button class="menu-btn" aria-label="Abrir menú">☰</button>
+<nav class="nav">
+<a href="index.html">Inicio</a>
+<a href="#opciones">Cómo podemos ayudarle</a>
+<a href="principiantes.html">Primeros pasos</a>
+<a href="predicaciones.html">Predicaciones</a>
+<a class="nav-cta" href="#formulario">Conectarme</a>
+</nav>
+</header>
+
+<main>
+<section class="inner-hero connection-hero">
+<div>
+<p class="eyebrow">Estamos para servirle</p>
+<h1>Centro de Conexión</h1>
+<p>Dé el próximo paso en su caminar con Dios. Seleccione el área donde necesita orientación y nuestro equipo pastoral dará seguimiento.</p>
+<a class="btn primary" href="#opciones">Comenzar</a>
+</div>
+</section>
+
+<section class="section" id="opciones">
+<div class="section-head">
+<p class="eyebrow">Dé el próximo paso</p>
+<h2>¿Cómo podemos ayudarle?</h2>
+<p>Seleccione una opción. El formulario se preparará automáticamente con su solicitud.</p>
+</div>
+
+<div class="connection-grid">
+<button class="connection-card" data-request="Quiero aceptar a Cristo">
+<span>❤️</span><h3>Quiero aceptar a Cristo</h3><p>Deseo conocer a Jesús y comenzar una nueva vida con Él.</p>
+</button>
+<button class="connection-card" data-request="Soy nuevo o visitante">
+<span>👋</span><h3>Soy nuevo</h3><p>Quiero conocer más sobre la iglesia y sus servicios.</p>
+</button>
+<button class="connection-card" data-request="Quiero bautizarme">
+<span>✝️</span><h3>Quiero bautizarme</h3><p>Deseo recibir orientación sobre el bautismo en agua.</p>
+</button>
+<button class="connection-card" data-request="Quiero ser miembro">
+<span>⛪</span><h3>Quiero ser miembro</h3><p>Deseo integrarme y servir en la congregación.</p>
+</button>
+<button class="connection-card" data-request="Quiero estudiar la Biblia">
+<span>📖</span><h3>Quiero estudiar la Biblia</h3><p>Necesito ayuda para comenzar o continuar creciendo.</p>
+</button>
+<button class="connection-card" data-request="Necesito consejería pastoral">
+<span>🤝</span><h3>Consejería pastoral</h3><p>Necesito conversar de manera privada con el pastor.</p>
+</button>
+<button class="connection-card" data-request="Solicito una visita pastoral">
+<span>🏠</span><h3>Visita pastoral</h3><p>Solicito una visita al hogar, hospital u otro lugar.</p>
+</button>
+<button class="connection-card" data-request="Quiero servir en un ministerio">
+<span>🙌</span><h3>Quiero servir</h3><p>Deseo usar mis dones para apoyar la obra del Señor.</p>
+</button>
+</div>
+</section>
+
+<section class="section soft connection-form-section" id="formulario">
+<div class="connection-form-copy">
+<p class="eyebrow">Cuéntenos cómo ayudarle</p>
+<h2>Formulario de conexión</h2>
+<p>Su información será recibida por el correo ministerial. Le responderemos tan pronto como sea posible.</p>
+<div class="privacy-note">
+<strong>Privacidad pastoral</strong>
+<p>La información compartida será tratada con respeto y discreción dentro del equipo autorizado.</p>
+</div>
+</div>
+
+<form class="connection-form" action="https://formsubmit.co/Labiblianoshablapodcast@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="Nueva solicitud del Centro de Conexión">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_autoresponse" value="Dios le bendiga. Hemos recibido su solicitud en el Centro de Conexión de la Iglesia Príncipe de Paz Philadelphia. Gracias por comunicarse con nosotros. El Pastor Gilberto Maldonado o una persona autorizada dará seguimiento tan pronto sea posible.">
+<label>Nombre completo<input name="Nombre completo" required></label>
+<div class="form-row">
+<label>Correo electrónico<input type="email" name="Correo" required></label>
+<label>Teléfono<input type="tel" name="Teléfono"></label>
+</div>
+<label>¿Cómo podemos ayudarle?
+<select id="requestType" name="Tipo de solicitud" required>
+<option value="">Seleccione una opción</option>
+<option>Quiero aceptar a Cristo</option>
+<option>Soy nuevo o visitante</option>
+<option>Quiero bautizarme</option>
+<option>Quiero ser miembro</option>
+<option>Quiero estudiar la Biblia</option>
+<option>Necesito consejería pastoral</option>
+<option>Solicito una visita pastoral</option>
+<option>Quiero servir en un ministerio</option>
+<option>Otro</option>
+</select>
+</label>
+<label>Cuéntenos un poco más<textarea name="Mensaje" rows="6" placeholder="Escriba aquí los detalles que desea compartir..." required></textarea></label>
+<div class="form-row">
+<label>Forma preferida de contacto
+<select name="Contacto preferido">
+<option>Correo electrónico</option>
+<option>Teléfono</option>
+<option>WhatsApp</option>
+</select>
+</label>
+<label>Mejor horario
+<select name="Mejor horario">
+<option>Mañana</option>
+<option>Tarde</option>
+<option>Noche</option>
+<option>Cualquier horario</option>
+</select>
+</label>
+</div>
+<label class="consent-check"><input type="checkbox" required> Autorizo a la iglesia a comunicarse conmigo para dar seguimiento a esta solicitud.</label>
+<button class="btn primary" type="submit">Enviar solicitud</button>
+<p class="small-note">Recibirá una confirmación automática por correo electrónico.</p>
+</form>
+</section>
+
+<section class="section dark next-steps">
+<div class="section-head">
+<p class="eyebrow">También puede comenzar hoy</p>
+<h2>Recursos para seguir creciendo</h2>
+</div>
+<div class="next-step-grid">
+<a href="principiantes.html"><span>🌱</span><strong>Primeros Pasos con Jesús</strong><small>Estudio guiado del Evangelio de Juan</small></a>
+<a href="predicaciones.html"><span>🎙️</span><strong>Predicaciones y Podcast</strong><small>Mensajes para fortalecer su fe</small></a>
+<a href="index.html#estudio"><span>📱</span><strong>Estudio por WhatsApp</strong><small>Jueves de 8:00 p.m. a 9:00 p.m.</small></a>
+<a href="index.html#oracion"><span>🙏</span><strong>Pedir oración</strong><small>Comparta su necesidad con nosotros</small></a>
+</div>
+</section>
+</main>
+
+<footer>
+<div><strong>La Biblia Nos Habla</strong><p>Iglesia Príncipe de Paz · Philadelphia</p></div>
+<div><a href="index.html">Inicio</a><a href="pastor.html">Conozca al Pastor</a><a href="gallery.html">Galería</a></div>
+<div><p>3661 N Marvine St.<br>Philadelphia, PA</p><p>Labiblianoshablapodcast@gmail.com</p></div>
+<p class="copyright">© <span id="year"></span> La Biblia Nos Habla.</p>
+</footer>
+<script src="conexion.js"></script>
+</body>
+</html>
