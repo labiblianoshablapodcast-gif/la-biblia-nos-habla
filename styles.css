@@ -1,0 +1,125 @@
+:root{
+  --black:#080807;
+  --black-2:#11110f;
+  --gold:#c7a45a;
+  --gold-light:#e1c784;
+  --cream:#f6f0e4;
+  --white:#ffffff;
+  --text:#24221d;
+  --muted:#6f6b61;
+  --line:#ded7c8;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--text);background:#fff;line-height:1.65}
+img{max-width:100%;display:block}
+a{color:inherit}
+.container{width:min(1180px,92%);margin:auto}
+.skip-link{position:absolute;left:-999px;top:10px;background:#fff;padding:10px;z-index:100}
+.skip-link:focus{left:10px}
+.site-header{position:sticky;top:0;z-index:50;background:rgba(8,8,7,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(199,164,90,.2)}
+.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none;line-height:1.15}
+.brand-cross{color:var(--gold);font-size:28px}
+.brand strong{display:block;font-size:14px;letter-spacing:.13em}
+.brand small{display:block;color:#c9c2b5;font-size:10px;letter-spacing:.08em;margin-top:5px}
+.menu{display:flex;align-items:center;gap:24px}
+.menu a{color:#f2eee6;text-decoration:none;font-size:13px;font-weight:600}
+.menu a:hover{color:var(--gold-light)}
+.nav-cta{border:1px solid var(--gold);padding:10px 15px;border-radius:999px}
+.menu-button{display:none;background:none;border:0;color:#fff;font-size:27px}
+.hero{position:relative;min-height:min(790px,88vh);display:flex;align-items:flex-end;overflow:hidden;background:#090908;color:#fff}
+.hero-image{position:absolute;inset:0;background-image:url("assets/banner-la-biblia-nos-habla.jpg");background-size:cover;background-position:center top;transform:scale(1.015)}
+.hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,4,3,.94) 0%,rgba(4,4,3,.68) 38%,rgba(4,4,3,.18) 72%),linear-gradient(0deg,rgba(4,4,3,.92),transparent 55%)}
+.hero-content{position:relative;z-index:2;padding:150px 0 78px}
+.eyebrow,.section-kicker{font-size:12px;letter-spacing:.2em;font-weight:700;color:var(--gold-light)}
+.hero h1,.section h2{font-family:"Cormorant Garamond",Georgia,serif;line-height:1.02}
+.hero h1{max-width:760px;font-size:clamp(52px,7vw,94px);margin:16px 0 20px}
+.hero-lead{max-width:650px;font-size:19px;color:#e5ded1}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin:30px 0}
+.button{display:inline-block;border:0;border-radius:4px;padding:14px 21px;text-decoration:none;font-weight:700;font:inherit;cursor:pointer}
+.button-primary{background:var(--gold);color:#16130c}
+.button-primary:hover{background:var(--gold-light)}
+.button-secondary{border:1px solid rgba(255,255,255,.65);color:#fff;background:rgba(0,0,0,.15)}
+.hero-verse{margin-top:55px;padding-left:18px;border-left:3px solid var(--gold);font-family:Georgia,serif;color:#eee7db;font-size:17px}
+.feature-strip{background:var(--cream);border-bottom:1px solid var(--line)}
+.feature-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.feature-grid article{display:flex;gap:14px;padding:28px 24px;border-right:1px solid var(--line)}
+.feature-grid article:last-child{border-right:0}
+.feature-grid span{font-size:27px}
+.feature-grid h2{font-size:16px;margin:0}
+.feature-grid p{font-size:13px;color:var(--muted);margin:3px 0 0}
+.section{padding:104px 0}
+.section h2{font-size:clamp(40px,5vw,62px);margin:10px 0 24px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:78px;align-items:center}
+.portrait-wrap{position:relative;background:var(--cream);padding:16px;border:1px solid var(--line)}
+.portrait-wrap img{width:100%;height:560px;object-fit:cover;object-position:center 22%}
+.portrait-caption{position:absolute;left:32px;bottom:32px;background:rgba(8,8,7,.88);color:#fff;padding:11px 15px;border-left:3px solid var(--gold)}
+.text-link{color:#8b6928;text-decoration:none;font-weight:700}
+.section-dark{background:var(--black);color:#fff}
+.section-dark h2{color:#fff}
+.section-heading{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:35px}
+.text-link.light{color:var(--gold-light)}
+.youtube-card{display:grid;grid-template-columns:1.45fr .55fr;background:var(--black-2);border:1px solid rgba(199,164,90,.28)}
+.youtube-visual{position:relative;min-height:390px;overflow:hidden}
+.youtube-visual img{width:100%;height:100%;object-fit:cover}
+.youtube-visual:after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.18)}
+.play-button{position:absolute;z-index:2;inset:50% auto auto 50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:76px;height:76px;border-radius:50%;background:var(--gold);color:#111;text-decoration:none;font-size:28px;box-shadow:0 12px 40px rgba(0,0,0,.35)}
+.youtube-copy{padding:46px;align-self:center}
+.youtube-copy h3{font-family:"Cormorant Garamond",Georgia,serif;font-size:38px;margin:15px 0}
+.youtube-copy p{color:#d2cabc}
+.tag{display:inline-block;color:var(--gold-light);border:1px solid rgba(199,164,90,.4);padding:6px 10px;font-size:11px;letter-spacing:.12em}
+.church{background:#fff}
+.church-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:42px}
+.info-card{padding:34px;border:1px solid var(--line);background:#fff;box-shadow:0 15px 42px rgba(30,25,15,.05)}
+.card-icon{font-size:28px;color:var(--gold)}
+.info-card h3{font-family:"Cormorant Garamond",Georgia,serif;font-size:28px;margin:15px 0}
+dl{margin:18px 0 0}
+dl div{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding:11px 0}
+dt{font-weight:700}dd{margin:0}
+.missions{background:linear-gradient(135deg,#14120e,#2c2416);color:#fff}
+.missions p{color:#ddd4c6}
+.mission-tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.mission-tags span{border:1px solid rgba(225,199,132,.4);padding:8px 12px;color:var(--gold-light)}
+blockquote{margin:0;padding:48px;border:1px solid rgba(225,199,132,.35);font-family:"Cormorant Garamond",Georgia,serif;font-size:34px;line-height:1.25}
+blockquote cite{display:block;font-family:Inter,Arial,sans-serif;font-size:13px;color:var(--gold-light);margin-top:20px;font-style:normal}
+.prayer{background:var(--cream)}
+.prayer-form{background:#fff;padding:36px;border:1px solid var(--line);box-shadow:0 18px 50px rgba(30,25,15,.08)}
+label{display:block;font-weight:700;margin-bottom:18px}
+input,textarea{width:100%;margin-top:7px;padding:13px;border:1px solid #cfc6b5;font:inherit;background:#fff}
+input:focus,textarea:focus{outline:2px solid var(--gold);outline-offset:1px}
+.privacy-note{font-size:13px;color:var(--muted)}
+.form-status{min-height:24px;color:#7a5b20;font-weight:600}
+footer{background:#050504;color:#d8d1c4;padding:40px 0}
+.footer-grid{display:grid;grid-template-columns:1.5fr .7fr .7fr;gap:35px;align-items:start}
+.footer-grid strong{letter-spacing:.12em}
+.footer-grid p{margin:7px 0}
+.footer-links{display:flex;flex-direction:column;gap:7px}
+.footer-links a{color:var(--gold-light);text-decoration:none}
+@media(max-width:900px){
+  .menu-button{display:block}
+  .menu{display:none;position:absolute;top:78px;left:0;right:0;background:#080807;padding:24px;flex-direction:column;align-items:flex-start;border-top:1px solid rgba(199,164,90,.2)}
+  .menu.open{display:flex}
+  .feature-grid{grid-template-columns:1fr 1fr}
+  .feature-grid article:nth-child(2){border-right:0}
+  .split,.youtube-card,.church-grid,.footer-grid{grid-template-columns:1fr}
+  .portrait-wrap img{height:480px}
+  .section-heading{align-items:flex-start;flex-direction:column}
+}
+@media(max-width:600px){
+  .brand small{display:none}
+  .hero{min-height:690px;align-items:flex-end}
+  .hero-image{background-position:48% top}
+  .hero-shade{background:linear-gradient(0deg,rgba(4,4,3,.98) 5%,rgba(4,4,3,.72) 62%,rgba(4,4,3,.2))}
+  .hero-content{padding:120px 0 55px}
+  .hero h1{font-size:48px}
+  .hero-lead{font-size:16px}
+  .feature-grid{grid-template-columns:1fr}
+  .feature-grid article{border-right:0;border-bottom:1px solid var(--line)}
+  .section{padding:72px 0}
+  .split{gap:42px}
+  .portrait-wrap img{height:390px}
+  .youtube-visual{min-height:220px}
+  .youtube-copy{padding:30px}
+  blockquote{padding:30px;font-size:28px}
+}
